@@ -1,0 +1,51 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Rent our Artspace",
+    description:
+      "We are located @ Mönckebergstrasse 2-4 Hamburg - Innenstadt",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "What kinda products do we Products ?",
+    description:
+      "Fashion Items, African Food, Podcast .",
+    icon: "bx:bxs-window-alt",
+  },
+  
+  {
+    title: "Community",
+    description:
+      "Woodland360 is powered by Naga Apparel.",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    What we offer
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Podcast for music, events and more. This podcast features interviews with musicians, producers and engineers who break down the creative process behind their songs. They discuss the songwriting process, production techniques, stories behind their albums, and more. 
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>

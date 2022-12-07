@@ -1,0 +1,35 @@
+---
+import { Image } from "@astrojs/image/components";
+import heroImage from "assets/hero.png";
+import Link from "@components/ui/link.astro";
+---
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 md:order-1 hidden md:block sm">
+    <Image
+      src={heroImage}
+      alt="Woodland360"
+      loading="eager"
+      format="png"
+    />
+  </div>
+  <div>
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
+      Culture Lounge
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      a vibrant arts community is an essential ingredient to the livability of a city, 
+      and that artists should have access to affordable space in which to live and work.
+      Our Artspace also offers workshops, events, and other artist-focused programming that enables members to network, share ideas, and collaborate on projects
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="#"
+        href="https://naga-clothing.com/"
+        target="_blank"
+        rel="noopener">Naga Our Sponsor</Link
+      >
+      
+    </div>
+  </div>
+</main>
