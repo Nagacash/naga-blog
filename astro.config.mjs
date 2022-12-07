@@ -12,7 +12,15 @@ import image from "@astrojs/image";
 // https://astro.build/config
 import mdx from "@astrojs/mdx";
 
-// https://astro.build/config
+// // https://astro.build/config
+// export default defineConfig({
+//   integrations: [tailwind(), alpinejs(), image(), mdx()]
+  
+// });
+
+import { defineConfig } from 'astro/config'
+
 export default defineConfig({
-  integrations: [tailwind(), alpinejs(), image(), mdx()]
-});
+  site: 'https://github.com/Nagacash',
+  base: '/naga-blog',
+})
