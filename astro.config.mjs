@@ -1,4 +1,3 @@
-import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 import tailwind from "@astrojs/tailwind";
@@ -23,4 +22,5 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   site: 'https://github.com/Nagacash',
   base: '/naga-blog',
+  integrations: [tailwind(), alpinejs(), image(), mdx()]
 })
