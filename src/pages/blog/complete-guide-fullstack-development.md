@@ -1,8 +1,8 @@
 ---
 title: "Naga Apparel - Clothing Brand"
-excerpt: "Naga Apparel is here to bring you the best quality posiible"
+excerpt: "Naga Apparel is here to bring you the best quality possible"
 publishDate: "2022-11-08T11:39:36.050Z"
-image: "https://cdn.reflowhq.com/media/1372559636/1260028458/5d6136bddcda2173837f588304d41eaa_md.jpg"
+image: "https://i.ytimg.com/vi/3RCNEQvgXdk/maxresdefault.jpg"
 category: "fashion"
 author: "Janette Lynch"
 layout: "@layouts/BlogLayout.astro"
