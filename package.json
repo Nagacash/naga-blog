@@ -9,7 +9,7 @@
     "build": "astro build --output public",
     "preview": "astro preview",
     "astro": "astro",
-    "generate": "npm run"
+    "generate": "npm run build"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.1.2",
