@@ -20,7 +20,9 @@ import mdx from "@astrojs/mdx";
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
+  // site: 'https://github.com/Nagacash',
+  // base: '/naga-blog',
+  integrations: [tailwind(), alpinejs(), image(), mdx()],
   site: 'https://github.com/Nagacash',
-  base: '/naga-blog',
-  integrations: [tailwind(), alpinejs(), image(), mdx()]
+  // base: '/naga-blog'
 })
